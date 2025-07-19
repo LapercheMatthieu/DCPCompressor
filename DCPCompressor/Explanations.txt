@@ -1,0 +1,17 @@
+﻿L'objectif de cette classe est de transformer des données d'un Array, double ou double? en quelque chose de stockable de manière optimale
+
+Il y a deux méthodes préférées pour le stockage :
+
+- Méthode DeltaCount qui va séparer en deux fichiers, un pour l'écart entre deux points et le deuxieme pour le nombre de fois que cet écart arrive a l asuite
+
+- Méthode Standard simplement un fichier qui va regrouper les données
+
+Pour chaque cas on va quand même trouver le meilleur facteur de 10 pour avoir quelque chose d'entier, et la plus petite variable nécessaire, 
+on va également utiliser une valeur nulle pour stocker les valeurs nulles
+
+
+Cette classe doit gérer le fait qu'une liste peut etre découpée en morceaux et devoir recoller ces morceaux.
+On doit pouvoir également extraire soit une section précise soit une valeure toutes les X valeurs
+
+Il serait intéressant également d'avoir un système de précision des valeurs qui permettrait d'arrondir toutes les valeurs a la précision prêt pour ne pas stocker 
+des valeurs stupides et gagner en place et en lisibilité
